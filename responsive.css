@@ -1,0 +1,159 @@
+@media (max-width: 1100px) {
+    .card-info h4{
+        font-size: 2rem;
+    }
+    .nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    /* collapase the contact links */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding:1rem ;
+    }
+    .contact-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 1.5rem 0;
+    }
+    .drop-down-arrow {
+        display: inline;
+        cursor: pointer;
+        transition: transform 0.25s ease-in;
+    }
+
+    .contact-link-div {        
+        transition: all 0.25s ease-in-out;
+        /* height: 0; */
+    }
+    .hide_ {
+        display: none !important;
+    }
+    .show_ {
+        display: flex !important;
+    }
+
+    /* contact links */
+    .tc-link-div  {
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+    .tc-link {
+        border: none;
+    }
+}
+
+@media  (max-width: 800px) {
+    .nav-links-1, .nav-links-2, .nav-links-2 > img, .nav-links-2 > p{
+        /*hide navbar  */
+        display: none;
+    }
+
+    /* small logo */
+    .logo {
+        height: 40px;
+    }
+
+    /* hambuger menu */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+
+        justify-content: center;
+        cursor: pointer;
+    }
+    .hr-line {
+        height: 2px;
+        width: 20px;
+        background-color: #777;
+        position: relative;
+    }
+    #fl, #tl {
+        transition : transform 0.25s ease-in-out;
+    }
+    #sl {
+        transition: visibility 0.1s ease-in-out;
+    }
+
+    /* menu bar */
+    .menu-bar {
+        display: block;
+        padding: 2rem 2rem 0 2rem;
+        height: 100vh;
+        width: 80%;
+        background-color: #fff;
+        position: absolute;
+        right: -600px;
+        top:80px;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links-1 {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        border-bottom: 2px solid #e1e1e1;
+    }
+    .ml-1 {
+        cursor: pointer;
+        padding: 1rem 0;
+    }
+    #menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu p:last-child {
+        color:#555;
+    }
+    .menu-links-2 {
+        padding: 2rem 0;
+        display: flex;
+        gap: 1rem;
+    }
+    .menu-links-3 {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        font-weight: bold;
+    }
+    .card {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    .card-img {
+        width: 100%;
+        justify-content: center;
+    }
+    .card-info {
+        gap:1.3rem;
+        padding: 0 30px;
+    }
+    .card-info h4{
+        font-size: 1.8rem;
+    }
+    .card-info p{
+        font-size: 1.3rem;
+    }
+
+    /* special card styles */
+    .first-card {
+        gap:2rem;
+        padding: 20px 20px 30px 20px;
+    }
+    .first-card h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .first-card p{
+        font-size: 1.1rem;
+    }
+
+    .contact-heading  {
+        font-size: 1rem;
+    }
+}
