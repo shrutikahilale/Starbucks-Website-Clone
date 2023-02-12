@@ -48,8 +48,16 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-#map-icon{
-    height: 22px;
+
+/* green hover */
+.hover-green {
+    cursor: pointer;
+}
+.hover-green:hover {
+    color:#116e3e;
+}
+.map-icon{
+    width: 22px;
     opacity: 0.9;
 }
 .nav-links-2:first-child {

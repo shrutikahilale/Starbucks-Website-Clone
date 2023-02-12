@@ -35,7 +35,6 @@ hamburgerMenu.addEventListener("click", ()=>{
         body.style.overflowY = "scroll";
         isMenuClose = true;
     }
-    
 });
 
 
@@ -65,3 +64,22 @@ for(let i=0;i<dropDown.length;i++){
         }
     });
 };
+
+// green hover on image
+let map = document.getElementById('map');
+let mapIcon = document.getElementById('map-icon');
+map.addEventListener('mouseover', ()=>{
+    mapIcon.setAttribute('src', "img/map-icon-green.png");
+});
+map.addEventListener('mouseout', ()=>{
+    mapIcon.setAttribute('src', "img/map-icon.png");
+});
+
+let mapForMob = document.getElementById('map-for-mobile');
+let mapIconForMob = document.getElementById('map-icon-for-mobile');
+mapForMob.addEventListener('mouseover', ()=>{
+    mapIconForMob.setAttribute('src', "img/map-icon-green.png");
+});
+mapForMob.addEventListener('mouseout', ()=>{
+    mapIconForMob.setAttribute('src', "img/map-icon.png");
+});
