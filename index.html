@@ -9,6 +9,9 @@
 
     <!-- css files -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,46 +30,74 @@
             <div class="nav-links-1">GIFT CARDS</div>
         </div>
         <div class="bar-div">
-            <div class="nav-links-2"><img src="img/map-icon.png">Find store</div>
+            <div class="nav-links-2"><img src="img/map-icon.png" id="map-icon">
+                <p>Find store</p>
+            </div>
             <div class="nav-links-2 btn simple">Sign in</div>
             <div class="nav-links-2 btn invert">Join now</div>
         </div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hr-line" id="fl"></div>
+            <div class="hr-line" id="sl"></div>
+            <div class="hr-line" id="tl"></div>
+        </div>
     </div>
 
-    <div class="card">
-        <div class="car-info">
+    <div class="menu-bar" id="menu-bar">
+        <div class="menu-links-1">
+            <div class="ml-1" id="menu">
+                <p>Menu</p>
+                <p id="menu-menu">&#10095;</p>
+            </div>
+            <div class="ml-1" id="rewards">Rewards</div>
+            <div class="ml-1" id="gift-cards">Gift Cards</div>
+        </div>
+        <div class="menu-links-2">
+            <div class="btn" id="sign-in">Sign in </div>
+            <div class="btn invert" id="join-now">Join now</div>
+        </div>
+        <div class="menu-links-3">
+            <img src="img/map-icon.png" id="map-icon">
+            <p>Find a store</p>
+        </div>
+    </div>
+
+    <div class="card reverse">
+        <img src="img/ci-1.jpg" alt="" class="card-img">
+
+        <div class="card-info first-card">
             <h4>Treat your fave</h4>
             <p>Show someone your care this Valentine's Day with a lovely gift card.</p>
             <div class="btn green">Send an eGift</div>
         </div>
-
-        <img src="img/ci-1.jpg" alt="" class="card-img">
-
     </div>
-    <div class="card reverse">
-        <div class="car-info">
+    <div class="card bg-orange">
+        <img src="img/ci-2.jpg" alt="" class="card-img">
+
+        <div class="card-info">
             <h4>Keep glowing</h4>
             <p>Our Pink Drink is bright, fruity and positively blushing.</p>
             <div class="btn green">Order now</div>
         </div>
-
-        <img src="img/ci-2.jpg" alt="" class="card-img">
     </div>
-    <div class="card">
-        <div class="car-info">
+    <div class="card reverse bg-blue">
+        <img src="img/ci-3.jpg" alt="" class="card-img">
+
+        <div class="card-info">
             <h4>Slice of joy</h4>
             <p>Always irresistible, our Red Velvet Loaf pairs perfectly with your favorite drink.</p>
             <div class="btn green">Order now</div>
         </div>
-        <img src="img/ci-3.jpg" alt="" class="card-img">
     </div>
-    <div class="card reverse">
-        <div class="car-info">
+    <div class="card">
+        <img src="img/ci-4.jpg" alt="" class="card-img">
+
+        <div class="card-info">
             <h4>Send love on Uber Eats</h4>
             <p>Make someone's day with a Starbucks® delivery on Uber Eats.</p>
             <div class="btn green">Order now</div>
         </div>
-        <img src="img/ci-4.jpg" alt="" class="card-img">
     </div>
 
     <div class="share-div">
@@ -81,8 +112,13 @@
 
     <div class="contact">
         <div class="contact-card">
-            <div class="contact-heading">About Us</div>
-            <div class="contact-link-div">
+            <div class="contact-heading" id="contact-heading">
+                About Us
+
+                <div class="drop-down-arrow" id="drop-down-arrow">&#8964;</div>
+
+            </div>
+            <div class="contact-link-div hide_">
                 <div class="contact-link"><a href="#">Our Company</a></div>
                 <div class="contact-link"><a href="#">Our Coffee</a></div>
                 <div class="contact-link"><a href="#">Stories and News</a></div>
@@ -92,8 +128,11 @@
             </div>
         </div>
         <div class="contact-card">
-            <div class="contact-heading">Careers</div>
-            <div class="contact-link-div">
+            <div class="contact-heading">Careers
+
+                <div class="drop-down-arrow" id="drop-down-arrow">&#8964;</div>
+            </div>
+            <div class="contact-link-div hide_">
                 <div class="contact-link"><a href="#">Culture and Values</a></div>
                 <div class="contact-link"><a href="#">Inclusion, Diversity, and Equity</a></div>
                 <div class="contact-link"><a href="#">College Achievement Plan</a></div>
@@ -103,16 +142,19 @@
             </div>
         </div>
         <div class="contact-card">
-            <div class="contact-heading">Social Impact</div>
-            <div class="contact-link-div">
+            <div class="contact-heading">Social Impact <div class="drop-down-arrow" id="drop-down-arrow">&#8964;</div>
+            </div>
+            <div class="contact-link-div hide_">
                 <div class="contact-link"><a href="#">People</a></div>
                 <div class="contact-link"><a href="#">Planet</a></div>
                 <div class="contact-link"><a href="#">Environmental and Social Impact Reporting</a></div>
             </div>
         </div>
         <div class="contact-card">
-            <div class="contact-heading">For Business Partners</div>
-            <div class="contact-link-div">
+            <div class="contact-heading">For Business Partners <div class="drop-down-arrow" id="drop-down-arrow">&#8964;
+                </div>
+            </div>
+            <div class="contact-link-div hide_">
                 <div class="contact-link"><a href="#">Landlord Support Center</a></div>
                 <div class="contact-link"><a href="#">Suppliers</a></div>
                 <div class="contact-link"><a href="#">Corporate Gift Card Sales</a></div>
@@ -120,8 +162,10 @@
             </div>
         </div>
         <div class="contact-card">
-            <div class="contact-heading">Order and Pickup</div>
-            <div class="contact-link-div">
+            <div class="contact-heading">Order and Pickup <div class="drop-down-arrow" id="drop-down-arrow">&#8964;
+                </div>
+            </div>
+            <div class="contact-link-div hide_">
                 <div class="contact-link"><a href="#">Order on the App</a></div>
                 <div class="contact-link"><a href="#">Order on the Web</a></div>
                 <div class="contact-link"><a href="#">Delivery</a></div>
@@ -152,5 +196,7 @@
     </div>
 
 </body>
+<!-- js files -->
+<script src="main.js"></script>
 
 </html>

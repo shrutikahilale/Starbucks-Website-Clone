@@ -6,6 +6,9 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+
+    /* hide scroll bar for menu bar (horizontal scroll) */
+    overflow-x: hidden;
 }
 
 /* NAV BAR [not-fixed]*/
@@ -15,6 +18,8 @@ body {
     justify-content: space-between;
     padding: 1.6rem 2.5rem;
     box-shadow: 0.2px 0.2px 3px #8a8a8a;
+
+    z-index:999;
 }
 .bar-div{
     display: flex;
@@ -43,8 +48,9 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-.nav-links-2 img {
+#map-icon{
     height: 22px;
+    opacity: 0.9;
 }
 .nav-links-2:first-child {
     margin-right: 1rem;
@@ -65,8 +71,12 @@ body {
     background-color: #333;
 }
 
-/* CARD */
+/* hide hamburger menu and menu bar */
+.menu-bar, .hamburger-menu {
+    display: none;
+}
 
+/* CARD */
 .card{
     display: flex;
     margin-top:2rem;
@@ -78,24 +88,39 @@ body {
 .reverse {
     flex-direction: row-reverse;
 }
-.car-info {
+.card-info {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap:3rem;
+    gap:2rem;
 
     padding-left: 100px; 
     padding-right: 100px; 
 }
-.car-info h4 {
+.card-info h4 {
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+.card-info p {
+    font-size: 1.8rem;
+}
+/* special cards styles */
+.first-card h4{
     font-size: 1.6rem;
     font-weight: 700;
 }
-.car-info p {
-    font-size: 1.1rem;
+.first-card p {
+    font-size: 1.3rem;
 }
+.bg-orange {
+    background-color: rgb(252, 205, 173);
+}
+.bg-blue {
+    background-color: rgb(160, 183, 246);
+}
+
 .green {
     border:1.7px solid #283d36;
 }
@@ -173,6 +198,10 @@ h3 {
 }
 .contact-link a:hover {
     color:#000;
+}
+
+.drop-down-arrow {
+    display: none;
 }
 
 /* TERMS AND CONDITIONS */
