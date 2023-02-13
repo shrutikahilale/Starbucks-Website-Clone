@@ -11,6 +11,8 @@ hamburgerMenu.addEventListener("click", ()=>{
     let body = document.getElementsByTagName('body')[0];
 
     if(isMenuClose == true) {
+        menu.style.display = "block";
+
         fl.style.transform = "translateY(6px) rotate(135deg)";        
         sl.style.visibility = "hidden";        
         tl.style.transform = " translateY(-6px) rotate(45deg)";    
@@ -30,6 +32,8 @@ hamburgerMenu.addEventListener("click", ()=>{
 
         // close menu
         menu.style.transform = "translateX(0px)";
+
+        menu.style.display = "none";
 
         // let scroll vertically now!
         body.style.overflowY = "scroll";
