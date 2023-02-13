@@ -49,18 +49,32 @@ for(let i=0;i<dropDown.length;i++){
     let isDropDownOpen = false;
 
     dropDown[i].addEventListener('click', function(event){
-        let e = event.target;
+        let e = event.target;       
+        console.log(e);
+
         let contactLinkDiv = e.parentElement.nextElementSibling;
 
         if(isDropDownOpen == false) {
-            e.style.transform = "rotateZ(180deg)";
+            if(e.id == 'drop-down-arrow') {
+                e.style.transform = "rotateZ(180deg)";
+            }
+            else {
+                e = e.childNodes[1];
+                e.style.transform = "rotateZ(180deg)";
+            }
         
             contactLinkDiv.classList.add('show_');
             contactLinkDiv.classList.remove('hide_'); 
             isDropDownOpen = true;  
         }
         else {
-            e.style.transform = "rotateZ(0deg)";
+            if(e.id == 'drop-down-arrow') {
+                e.style.transform = "rotateZ(0deg)";
+            }
+            else {
+                e = e.childNodes[1];
+                e.style.transform = "rotateZ(0deg)";
+            }
 
             contactLinkDiv.classList.add('hide_');
             contactLinkDiv.classList.remove('show_'); 
