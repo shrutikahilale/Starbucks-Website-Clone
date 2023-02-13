@@ -49,7 +49,7 @@ hamburgerMenu.addEventListener("click", ()=>{
 });
 
 // open further menu
-let furtherMenuIcon = document.getElementById('menu-menu');
+let furtherMenuIcon = document.getElementById('menu-further');
 
 // open fMenu
 furtherMenuIcon.addEventListener('click', ()=>{

@@ -80,7 +80,7 @@ body {
 }
 
 /* hide hamburger menu and menu bar */
-.menu-bar, .hamburger-menu {
+.menu-bar, .hamburger-menu, .further-menu {
     display: none;
 }
 
