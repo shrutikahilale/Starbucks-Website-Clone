@@ -1,5 +1,7 @@
 let hamburgerMenu = document.getElementById('hamburger-menu');
 let isMenuClose= true;
+let isFMenuClose = true;
+let fMenu =  document.getElementById('further-menu');
 
 hamburgerMenu.addEventListener("click", ()=>{
     let fl = document.getElementById('fl');
@@ -37,8 +39,39 @@ hamburgerMenu.addEventListener("click", ()=>{
 
         // let scroll vertically now!
         body.style.overflowY = "scroll";
+        if(isFMenuClose == false) {
+            fMenu.style.transform = "translateX(0px)"
+         fMenu.style.display = "none";
+            isFMenuClose = true;
+        }
         isMenuClose = true;
     }
+});
+
+// open further menu
+let furtherMenuIcon = document.getElementById('menu-menu');
+
+// open fMenu
+furtherMenuIcon.addEventListener('click', ()=>{
+    if(isFMenuClose == true) {
+       fMenu.style.transform = "translateX(-600px)"
+        fMenu.style.display = "flex";
+        isFMenuClose = false;
+    }
+    else {
+        fMenu.style.transform = "translateX(0px)"
+        fMenu.style.display = "none";
+        isFMenuClose = true;
+    }
+});
+
+// close fMenu
+let menuBackBtn = document.getElementById('menu-back-btn'); 
+menuBackBtn.addEventListener('click', ()=>{
+    // close fMenu
+    fMenu.style.transform = "translateX(0px)"
+    fMenu.style.display = "none";
+    isFMenuClose = true;
 });
 
 
